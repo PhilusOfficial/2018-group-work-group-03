@@ -1,0 +1,42 @@
+{
+  "clarinetParts":[
+    {
+        "content_text":"Mousepiece",
+         "title": "Mousepiece",
+        "text": "A clarinet mouthpiece is nothing more than the end of a cylindrical tube with a flattened end onto which a reed is fastened, either with a ligature or a cord as can be seen on the picture left (the cord is typical for Germans). One can blow into this end and you will get a somewhat squeaking, high pitched note - but this definitely is a clarinet sound. Ancient woodwind instruments did not have the mouthpiece separated from the instrument, and with very ancient ones the reed was a part of the instruments body (which was made from reed grass), separated by simply sawing a slot between body and reed."
+    },
+    {
+        "content_text":"Barrel",
+        "title": "Barrel",
+        "text":"The clarinet barrel connects the instrument's mouthpiece and body, shaping and directing sound through the instrument. The inside shape of the barrel is known as the taper, which can be straight, standard, reverse or double. A straight taper has the same size on both ends, while a standard taper is slightly smaller at the top of the barrel than the bottom. Reverse taper barrels are the opposite of the standard, with a bottom opening slightly smaller than the top. A double taper is rare, but means that the center of the barrel inside is smaller than on the ends."
+
+    },
+    {
+        "content_text":"Upper Joint",
+        "title": "Upper Joint",
+        "text":"The upper joint is one half of the clarinet's body, where each note's pitch is determined."
+
+    },
+    {
+        "content_text":"Lower Joint",
+        "title": "Lower Joint",
+        "text":"The lower joint is the lower half of the clarinet's body, where each note's pitch is determined. The upper and lower joints come together in assembly to form the body of the clarinet. By pressing different combinations of keys, the player can adjust the pitch of the note being blown. The clarinet has an approximate four octave range, though more advanced players can go even higher still."
+
+    },
+    {
+        "content_text":"Bell",
+        "title": "Bell",
+        "text":"The bell is the flared section at the end of the clarinet from which the sound projects. The bell is the last of five sections of the clarinet where the sound projects out from the instrument. It is located at the bottom end of the clarinet and comes in an almost infinite selection of lengths, flares, weights, bores and more."
+
+    },
+    {
+        "content_text":"Next Page",
+        "title": "Next Page",
+        "text":""
+
+    }
+
+
+
+]
+}
