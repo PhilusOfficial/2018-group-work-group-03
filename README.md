@@ -11,7 +11,10 @@ The main goal was to create something related to music. After choosing an instru
 
 ## **Graphics**
 
-Clarinet itself is very complex so we wanted to present it as simple and as elegant as possible, but still showing all important details. Every drawing of it is designed in Illustrator and Photoshop, but the notes are drawn in p5.js. 
+Clarinet itself is very complex so we wanted to present it as simple and as elegant as possible, but still showing all important details. Every drawing of it is designed in Illustrator and Photoshop, but the notes are drawn in p5.js.
+
+![drawing](https://user-images.githubusercontent.com/43534301/52316447-abd50b80-29bb-11e9-8a89-cdabebaa336f.GIF)
+
 
 ## **Design challenge**
 
