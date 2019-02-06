@@ -20,9 +20,12 @@ Clarinet itself is very complex so we wanted to present it as simple and as eleg
 
 Even though we wanted to have as many interactions as possible, we knew that we had to choose what suits our project. Lastly, we decided to make interactions with the mouse, keyboard and the microphone. 
 
- *mouse interaction*  
+   **mouse interaction**  
+   
+   ![mousegif](https://user-images.githubusercontent.com/43534301/52316501-e8086c00-29bb-11e9-9094-01e307680790.gif)
+   
 
- *keyboard interaction*
+   **keyboard interaction**
 
  *microphone interaction*
 
