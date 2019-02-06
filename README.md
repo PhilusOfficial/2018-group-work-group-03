@@ -1,13 +1,9 @@
 ![clarinet_gif](https://user-images.githubusercontent.com/43534301/52316396-73353200-29bb-11e9-9aff-a9d61f41f6f3.gif)
 
 
-## **About**
+## **Project Idea**
 
-**CLARINETTO** is a musical project built in p5.js for the course Creative Coding at the Politecnico di Milano. The main idea is to show how the instrument functions and produces sounds.
-
-## **Idea**
-
-The main goal was to create something related to music. After choosing an instrument we had a brainstorming about what to present and how to present it. At the end, we decided to create and provide some basic but useful information. With our project one can learn about parts of the clarinet, the production of the sound and even to virtually play the clarinet.
+**CLARINETTO** is a musical project built in p5.js for the course Creative Coding at the Politecnico di Milano. The main goal was to create something related to music and as a result we want to show how the instrument functions and produces sounds. After choosing an instrument we had a brainstorming about what to present and how to present it. At the end, we decided to create and provide some basic but useful information. With our project one can learn about parts of the clarinet, the production of the sound and even to virtually play the clarinet.
 
 ## **Graphics**
 
