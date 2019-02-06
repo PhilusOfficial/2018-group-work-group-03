@@ -9,7 +9,7 @@
 
 Clarinet itself is very complex so we wanted to present it as simple and as elegant as possible, but still showing all important details. Every drawing of it, is designed in Illustrator and Photoshop, but the notes are drawn in p5.js.
 
-
+![drawinggif](https://user-images.githubusercontent.com/43534301/52322595-08dfba00-29da-11e9-9278-4e8fcf272e1a.gif)
 
 
 ## **Design challenge**
