@@ -182,7 +182,7 @@ The last page on which you are playing the tune was also problematic. The hardes
  
  ## **Course reference and academic year**
  
- Creative Coding 2018/2019 (link)
+ Creative Coding 2018/2019 (https://drawwithcode.github.io/2018-group-work-group-03/)
  
  Politecnico di Milano - Scuola del Design
 
