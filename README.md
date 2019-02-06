@@ -102,7 +102,7 @@ We expanded and explored the code that we were familiar with. We came across sev
 
 * **code for rotation**
    
-   
+![rotationgif](https://user-images.githubusercontent.com/43534301/52322471-97a00700-29d9-11e9-8b92-6e99b8ee9609.gif)   
 ```
    function draw() {
    push();
