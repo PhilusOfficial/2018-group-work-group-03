@@ -80,7 +80,7 @@ push();
   }
 
   function changePage() {
-       window.location.href="index.html";}
+       window.location.href="mouth.html";}
 
   function windowResized() {
        resizeCanvas(windowWidth, windowHeight)
