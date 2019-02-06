@@ -3,15 +3,22 @@ var myImageUpper;
 var myImageLower;
 var myImageBarrel;
 var myImageMouth;
+
 var myImageBg1;
 var myImageBg2;
 var myImageBg3;
 var myImageBg4;
 var myImageBg5;
 
+var myImageArrow;
+var myImageArrowBg;
+
 var mysong;
 
 var radius = 80;
+
+var arrow = {x:1200, y:200, active: false};
+var arrowBg = {x:1400, y:100};
 
 var bell = {x: 180, y: 100, active: false};
 var bellbg = {x:1159, y:542};
@@ -33,11 +40,15 @@ function preload(){
 
   mySong = loadSound("./assets/clarinet.song2.mp3");
 
+ myImageArrow = loadImage("./assets/Frecciatraccia.png");
+ myImageArrowBg = loadImage("./assets/Freccia.png");
+	
  myImageBg1 = loadImage("./assets/bg1.png");
  myImageBg2 = loadImage("./assets/bg2.png");
  myImageBg3 = loadImage("./assets/bg3.png");
  myImageBg4 = loadImage("./assets/bg4.png");
  myImageBg5 = loadImage("./assets/bg5.png");
+	
  myImageMouth = loadImage("./assets/mouthpiece.png");
  myImageBarrel = loadImage("./assets/barrel.png");
  myImageUpper = loadImage("./assets/upperJoint.png");
@@ -58,11 +69,16 @@ function draw() {
   background(0);
 
   imageMode(CENTER);
+	
+  image(myImageArrowBg, arrowBg.x, arrowBg.y, myImageArrowBg.width/4, myImageArrowBg.height/4);
+  image(myImageArrow, arrow.x, arrow.y, myImageArrow.width/4, myImageArrow.height/4);
+	
   image(myImageBg1, mouthbg.x, mouthbg.y, myImageBg1.width/4, myImageBg1.height/4);
   image(myImageBg2, barrelbg.x, barrelbg.y, myImageBg2.width/4, myImageBg2.height/4);
   image(myImageBg3, upperbg.x, upperbg.y, myImageBg3.width/4, myImageBg3.height/4);
   image(myImageBg4, lowerbg.x, lowerbg.y, myImageBg4.width/4, myImageBg4.height/4);
   image(myImageBg5, bellbg.x, bellbg.y, myImageBg5.width/4, myImageBg5.height/4);
+	
   image(myImageBell, bell.x, bell.y, myImageBell.width/4, myImageBell.height/4);
   image(myImageLower, lower.x, lower.y, myImageLower.width/4, myImageLower.height/4);
   image(myImageBarrel, barrel.x, barrel.y, myImageBarrel.width/4, myImageBarrel.height/4);
@@ -96,12 +112,19 @@ pop();
 
 function mousePressed() {
 
-			distance = dist(mouseX, mouseY, bell.x, bell.y);
-			if (distance < radius) {
-				bell.active = true;
-	} else {
-				bell.active = false;
-	}
+distance = dist(mouseX, mouseY, arrow.x, arrow.y);
+  if (distance < radius) {
+    arrow.active = true;
+  } else {
+    arrow.active = false;
+  }
+	
+distance = dist(mouseX, mouseY, bell.x, bell.y);
+  if (distance < radius) {
+     bell.active = true;
+} else {
+     bell.active = false;
+}
 
 distance = dist(mouseX, mouseY, lower.x, lower.y);
   if (distance < radius) {
@@ -143,6 +166,11 @@ function isInCircle(movingPart, staticPart, radius) {
 
 function mouseReleased() {
 
+  if (arrow.active && isInCircle(arrow, arrowBg, radius)) {
+            arrow.x = arrowBg.x;
+            arrow.y = arrowBg.y;
+        } 
+
   if (bell.active && isInCircle(bell, bellbg, radius)) {
             bell.x = bellbg.x - 1;
             bell.y = bellbg.y;
@@ -172,11 +200,16 @@ function mouseReleased() {
 }
 
 function mouseDragged() {
+	
+if (arrow.active) {
+  arrow.x = mouseX;
+  arrow.y = mouseY;
+  }	
 
 if (bell.active) {
-	bell.x = mouseX;
-	bell.y = mouseY;
-			}
+   bell.x = mouseX;
+   bell.y = mouseY;
+}
 
 if (lower.active) {
   lower.x = mouseX;
