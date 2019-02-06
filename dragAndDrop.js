@@ -3,12 +3,12 @@ var myImageUpper;
 var myImageLower;
 var myImageBarrel;
 var myImageMouth;
-
 var myImageBg1;
 var myImageBg2;
 var myImageBg3;
 var myImageBg4;
 var myImageBg5;
+
 var myImageArrow;
 var myImageArrowBg;
 
@@ -16,30 +16,29 @@ var mysong;
 
 var radius = 80;
 
-var arrow = {x:1200, y:200, active: false};
-var arrowBg = {x:1400, y:100};
+var arrow;
+var arrowBg;
 
-var bell = {x: 180, y: 100, active: false};
-var bellbg = {x:1159, y:542};
 
-var lower = {x:580, y:100, active:false};
-var lowerbg = {x:916, y:551};
+var bell;
+var bellbg;
+var lower;
+var lowerbg;
+ var barrel;
+ var barrelbg;
+ var upper;
+ var upperbg;
 
-var barrel = {x:980, y:100, active:false};
-var barrelbg = {x:375, y:551};
+ var mouth;
+ var mouthbg;
 
-var upper = {x:350, y:250, active:false};
-var upperbg = {x:613, y:550};
-
-var mouth = {x:750, y:250, active:false};
-var mouthbg = {x:250, y:550};
 
 
 function preload(){
 
   mySong = loadSound("./assets/clarinet.song2.mp3");
 
- myImageArrow = loadImage("./assets/Frecciatraccia.png");
+  myImageArrow = loadImage("./assets/Frecciatraccia.png");
  myImageArrowBg = loadImage("./assets/Freccia.png");
 
  myImageBg1 = loadImage("./assets/bg1.png");
@@ -47,7 +46,6 @@ function preload(){
  myImageBg3 = loadImage("./assets/bg3.png");
  myImageBg4 = loadImage("./assets/bg4.png");
  myImageBg5 = loadImage("./assets/bg5.png");
-
  myImageMouth = loadImage("./assets/mouthpiece.png");
  myImageBarrel = loadImage("./assets/barrel.png");
  myImageUpper = loadImage("./assets/upperJoint.png");
@@ -60,24 +58,44 @@ function setup() {
 
   createCanvas(windowWidth, windowHeight);
 
+
+  bell = {x: width*0.2, y: height*0.2, active: false};
+   bellbg = {x:width*0.8+53, y:height*0.8-10};
+
+   lower = {x:width*0.5, y: height*0.2, active:false};
+   lowerbg = {x:width*0.6+65, y:height*0.8};
+
+   barrel = {x:width*0.8, y: height*0.2, active:false}
+   barrelbg = {x:width*0.2+36, y:height*0.8};
+
+   upper = {x:width*0.3, y: height*0.4, active:false}
+   upperbg = {x:width*0.4+18, y:height*0.8};
+
+ mouth = {x:width*0.7, y: height*0.4, active:false}
+   mouthbg = {x:width*0.1+40, y:height*0.8};
+
+    arrow = {x:width*0.9+20, y:height*0.1, active: false};
+    arrowBg = {x:width*0.9+20, y:height*0.2};
+
+
   mySong.play();
 }
 
 function draw() {
 
-  background('black');
+
+  background(0);
 
   imageMode(CENTER);
 
-  image(myImageArrowBg, arrowBg.x, arrowBg.y, myImageArrowBg.width/4, myImageArrowBg.height/4);
-  image(myImageArrow, arrow.x, arrow.y, myImageArrow.width/4, myImageArrow.height/4);
+  image(myImageArrowBg, arrowBg.x, arrowBg.y, myImageArrowBg.width/6, myImageArrowBg.height/6);
+image(myImageArrow, arrow.x, arrow.y, myImageArrow.width/6, myImageArrow.height/6);
 
   image(myImageBg1, mouthbg.x, mouthbg.y, myImageBg1.width/4, myImageBg1.height/4);
   image(myImageBg2, barrelbg.x, barrelbg.y, myImageBg2.width/4, myImageBg2.height/4);
   image(myImageBg3, upperbg.x, upperbg.y, myImageBg3.width/4, myImageBg3.height/4);
   image(myImageBg4, lowerbg.x, lowerbg.y, myImageBg4.width/4, myImageBg4.height/4);
   image(myImageBg5, bellbg.x, bellbg.y, myImageBg5.width/4, myImageBg5.height/4);
-
   image(myImageBell, bell.x, bell.y, myImageBell.width/4, myImageBell.height/4);
   image(myImageLower, lower.x, lower.y, myImageLower.width/4, myImageLower.height/4);
   image(myImageBarrel, barrel.x, barrel.y, myImageBarrel.width/4, myImageBarrel.height/4);
@@ -111,19 +129,20 @@ pop();
 
 function mousePressed() {
 
-distance = dist(mouseX, mouseY, arrow.x, arrow.y);
+  distance = dist(mouseX, mouseY, arrow.x, arrow.y);
   if (distance < radius) {
     arrow.active = true;
   } else {
     arrow.active = false;
   }
 
-distance = dist(mouseX, mouseY, bell.x, bell.y);
-  if (distance < radius) {
-     bell.active = true;
-} else {
-     bell.active = false;
-}
+
+			distance = dist(mouseX, mouseY, bell.x, bell.y);
+			if (distance < radius) {
+				bell.active = true;
+	} else {
+				bell.active = false;
+	}
 
 distance = dist(mouseX, mouseY, lower.x, lower.y);
   if (distance < radius) {
@@ -166,10 +185,10 @@ function isInCircle(movingPart, staticPart, radius) {
 function mouseReleased() {
 
   if (arrow.active && isInCircle(arrow, arrowBg, radius)) {
-            arrow.x = arrowBg.x;
-            arrow.y = arrowBg.y;
-            changePage()
-        }
+          arrow.x = arrowBg.x;
+          arrow.y = arrowBg.y;
+          changePage();
+      }
 
   if (bell.active && isInCircle(bell, bellbg, radius)) {
             bell.x = bellbg.x - 1;
@@ -194,7 +213,6 @@ function mouseReleased() {
    if (mouth.active && isInCircle(mouth, mouthbg, radius)) {
               mouth.x = mouthbg.x;
               mouth.y = mouthbg.y - 7.5;
-
       }
 
   return false;
@@ -202,15 +220,16 @@ function mouseReleased() {
 
 function mouseDragged() {
 
-if (arrow.active) {
+  if (arrow.active) {
   arrow.x = mouseX;
   arrow.y = mouseY;
   }
 
+
 if (bell.active) {
-   bell.x = mouseX;
-   bell.y = mouseY;
-}
+	bell.x = mouseX;
+	bell.y = mouseY;
+			}
 
 if (lower.active) {
   lower.x = mouseX;
