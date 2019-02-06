@@ -20,7 +20,7 @@ Even though we wanted to have as many interactions as possible, we knew that we 
 
  *microphone interaction*
 
- **Code challenge**
+ ## **Code challenge**
 
 We expanded and explored the code that we were familiar with. We came across several problems with every part or page which primarily drove us crazy, but at the end it wasn’t anything that we could not fix.
 
@@ -29,5 +29,24 @@ We expanded and explored the code that we were familiar with. We came across sev
  *code for rotation*
 
  *following the tune*
+ 
+ ## **Team members**
+ 
+ Ivana Riva
+ 
+ Kira Pyatakova
+ 
+ Irina Stojsic
+ 
+ Mariapaola Gentile
+ 
+ ## **Course reference and academic year**
+ 
+ Creative Coding 2018/2019 (link)
+ 
+Politecnico di Milano - Scuola del Design
+
+Faculty: Michele Mauri, Tommaso Elli
+
 
 
