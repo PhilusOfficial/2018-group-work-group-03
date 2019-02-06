@@ -316,7 +316,7 @@ changePage();
 
 function changePage() {
   if ((keyIsPressed == true) && (key == 'n')) {
-     window.location.href="rotation.html";}
+     window.location.href="lastPage.html";}
 }
 
 

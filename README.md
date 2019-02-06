@@ -9,7 +9,7 @@
 
 Clarinet itself is very complex so we wanted to present it as simple and as elegant as possible, but still showing all important details. Every drawing of it, is designed in Illustrator and Photoshop, but the notes are drawn in p5.js.
 
-![drawing](https://user-images.githubusercontent.com/43534301/52316447-abd50b80-29bb-11e9-8a89-cdabebaa336f.GIF)
+![drawinggif](https://user-images.githubusercontent.com/43534301/52322595-08dfba00-29da-11e9-9278-4e8fcf272e1a.gif)
 
 
 ## **Design challenge**
@@ -20,7 +20,7 @@ Even though we wanted to have as many interactions as possible, we knew that we 
    
 The idea behind this interaction is that user can learn the correct structure of the clarinet in a playful way. 
    
-   
+![mousegif](https://user-images.githubusercontent.com/43534301/52322372-38da8d80-29d9-11e9-955c-6f49774cd8b0.gif)   
 ```
   function isInCircle(movingPart, staticPart, radius) {
   var xDistance = movingPart.x - staticPart.x;
@@ -41,7 +41,7 @@ if (bell.active && isInCircle(bell, bellbg, radius)) {
 
 By pressing the certain keys, one will hear the basic notes. However, except hearing the notes, you will be able to see which keys on clarinet need to be pressed in order to produce certain note.
    
-   
+![keygif](https://user-images.githubusercontent.com/43534301/52322399-5871b600-29d9-11e9-849c-fc1f9c49c6a5.gif)  
 ```
    function draw() {
    a = a + 0.04;
@@ -71,6 +71,8 @@ By pressing the certain keys, one will hear the basic notes. However, except hea
 * **microphone interaction**
 
 With this interaction we wanted to show how the sound is produced. After learning about the correct angle position of the clarinet, one will see the correct mouth position and the air flow.
+
+![mouthpic](https://user-images.githubusercontent.com/43534301/52322439-7b03cf00-29d9-11e9-90ac-a7f280a088d7.png)
 ```
  if (mouseX > ax-imageSize && mouseX < ax+imageSize &&
       mouseY > ay-imageSize && mouseY < ay+imageSize) {
@@ -100,7 +102,7 @@ We expanded and explored the code that we were familiar with. We came across sev
 
 * **code for rotation**
    
-   
+![rotationgif](https://user-images.githubusercontent.com/43534301/52322471-97a00700-29d9-11e9-8b92-6e99b8ee9609.gif)   
 ```
    function draw() {
    push();
@@ -137,20 +139,27 @@ We expanded and explored the code that we were familiar with. We came across sev
 
 * **following the tune**
 
-## **Inspiration**
-
-* http://mchn.st/
+## **Inspirations**
 
 * https://www.patatap.com/
 
-* https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/
- 
+* https://musiclab.chromeexperiments.com/Experiments
+
+* http://mchn.st/ 
+
+
+## **Theory references**
+
+* https://www.theclarinet.net/
+
+* http://www.the-clarinets.net/
+
+* http://newt.phys.unsw.edu.au/jw/clarinetacoustics.html#overview
+
  
  ## **Libraries**
  
  * p5.sound
- 
- * p5.dom
  
  
  ## **Team members**
@@ -163,13 +172,14 @@ We expanded and explored the code that we were familiar with. We came across sev
  
  Mariapaola Gentile
  
+ 
  ## **Course reference and academic year**
  
  Creative Coding 2018/2019 (link)
  
-Politecnico di Milano - Scuola del Design
+ Politecnico di Milano - Scuola del Design
 
-Faculty: Michele Mauri, Tommaso Elli
+ Faculty: Michele Mauri, Tommaso Elli
 
 
 

@@ -127,7 +127,7 @@ pop();
 }
 
 function changePage() {
-     window.location.href="keyboard.html";
+     window.location.href="rotation.html";
 }
 
 function windowResized() {
