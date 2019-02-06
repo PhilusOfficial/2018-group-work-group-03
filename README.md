@@ -22,12 +22,52 @@ The idea behind this interaction is that user can learn the correct structure of
    
    ![mousegif](https://user-images.githubusercontent.com/43534301/52316501-e8086c00-29bb-11e9-9094-01e307680790.gif)
    
+   '''
+  function isInCircle(movingPart, staticPart, radius) {
+  var xDistance = movingPart.x - staticPart.x;
+  var yDistance = movingPart.y - staticPart.y;
+
+  return xDistance*xDistance + yDistance*yDistance <= radius*radius;
+ }
+
+function mouseReleased() {
+if (bell.active && isInCircle(bell, bellbg, radius)) {
+            bell.x = bellbg.x - 1;
+            bell.y = bellbg.y;
+        }
+'''
+
 
 * **keyboard interaction**
 
 By pressing the certain keys, one will hear the basic notes. However, except hearing the notes, you will be able to see which keys on clarinet need to be pressed in order to produce certain note.
    
    ![keyboardgif](https://user-images.githubusercontent.com/43534301/52318265-e773d380-29c3-11e9-84a5-e441d61839c6.gif)
+   
+   '''
+   function draw() {
+   a = a + 0.04;
+  s = cos(a) * 2;
+  fill('#EBCA60');
+  noStroke();
+  if ((keyIsPressed == true) && (key == 'a')) {
+  mymi.play();
+  myfa.fade(0.5, 0.1);
+  mysol.fade(0.5, 0.1);
+  myla.fade(0.5, 0.1);
+  mysi.fade(0.5, 0.1);
+  mydo.fade(0.5, 0.1);
+  myre.fade(0.5, 0.1);
+  mymi2.fade(0.5, 0.1);
+  myfa2.fade(0.5, 0.1);
+  mysol2.fade(0.5, 0.1);
+  myla2.fade(0.5, 0.1);
+  image(myImagemi, width/7, height/11, 0.7*myImagemi.width, 0.7*myImagemi.height);
+  image(myImageback2, 2*width/7, height/11, 0.7*myImageback2.width, 0.7*myImageback2.height);
+  mi = ellipse(width/2+15,3*height/5+150,15);
+
+  }
+  '''
    
 
 * **microphone interaction**
@@ -43,6 +83,38 @@ We expanded and explored the code that we were familiar with. We came across sev
 * **code for rotation**
    
    ![rotationgif](https://user-images.githubusercontent.com/43534301/52316672-dd9aa200-29bc-11e9-9e21-9ebac518d1a8.gif)
+   
+   '''
+   function draw() {
+   push();
+	translate(width/2, height/4.5);
+   rotate(-R);
+    img = image(myImageprofile, 0,0, 0.32*myImageprofile.width, 0.32*myImageprofile.height);
+	pop();
+
+	if (isStop==false) {
+   R++
+   if (R>=90) {R=0}
+   }
+	else {R=R;} 
+   }
+   function mouseClicked() {
+    if(mouseX< 0.85*width || mouseY<0.85*height) {isStop=!isStop; checkAngle();}  else{ button.mousePressed(changePage);}
+  }
+   function checkAngle() {
+  	if((isStop==true)&&(R>(aim-range))&&(R<(aim+range))){
+    frameRate(0)
+    textSize(20);
+    noStroke();
+    fill(255);
+    textFont('Cutive Mono');
+    textStyle(NORMAL);
+    textAlign(LEFT);
+      text('Sound comes and goes depending on how you hold the clarinet.You should keep your elbows in so that the top of your arm and the back of your hand make a straight line.', width/12, 4*height/5, 750,200);
+   var w = textWidth('Well done!');
+ rect(width/12, 3*height/4-18, w, 25);
+   fill(0);
+   testo = text('Well done!', width/12, 3*height/4);
    
 
 * **following the tune**
