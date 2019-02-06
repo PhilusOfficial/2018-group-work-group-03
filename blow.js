@@ -3,6 +3,7 @@ var analyzer;
 var mouth3;
 var fa2;
 var volume;
+var note;
 //arrow
 var xSize;
 var ySize;
@@ -16,11 +17,11 @@ var yOffset = 0.0;
 var volume;
 
 
-
-
 function preload(){
   mymouth3 = loadImage("./assets/mouth1.png");
+  mynote = loadImage("./assets/nota.png");
   myfa2 = loadSound("./assets/FA2.mp3");
+
 }
 
 function setup() {
@@ -39,23 +40,22 @@ function setup() {
 function draw() {
   // Get the overall volume (between 0 and 1.0)
   background(0);
-  push();
-  //text
-  textSize(20);
-  noStroke();
-  fill(255);
-  textFont('Courier');
-  textStyle(NORMAL);
-  textAlign(LEFT);
-  text('Embouchure is how you hold the clarinet in your mouth between your lips and how you blow into the instrument. You take the clarinet into your mouth with the reed on lower lips, the mouthpiece touching the upper teeth.', width/8, height*0.2,600,200);
-  text('For a better experience.....headphones', width/8, height*0.9);
-  var w = textWidth("Blow to play the clarinet!");
-  rect(width/8, height*0.5, w+width/8, 15);
-  fill(0);
-  text('Blow to play the clarinet!', width/8, height*0.5);
-  pop();
-  noFill();
-  volume = mic.getLevel();
+    push();
+    //text
+    textSize(20);
+    noStroke();
+    fill(255);
+    textFont('Cutive Mono');
+    textAlign(LEFT);
+    text('Embouchure is how you hold the clarinet in your mouth between your lips and how you blow into the instrument. You take the clarinet into your mouth with the reed on lower lips, the mouthpiece touching the upper teeth.', width/8, height*0.3,500,200);
+    text('*Use your headphones', width/8, height*0.9);
+    var w = textWidth("Blow to play the clarinet!");
+    rect(width/4, height*0.2, width/8, 15);
+    fill(100);
+    text('Blow to play the clarinet!', width/8, height*0.2);
+    pop();
+    noFill();
+    volume = mic.getLevel();
 
   imageMode(CENTER);
   imgmouth3= image(mymouth3, 3*width/4, height/2, mymouth3.width, mymouth3.height);
@@ -81,10 +81,10 @@ function draw() {
   };
   pop();
 
-
-    // Draw the image 3
-    stroke(255);
-    rect(ax, ay, imageSize, imageSize);
+  imgnote= image(mynote, ax, ay, mymouth3.width/11, mymouth3.height/11);
+    // // Draw the image 3
+    // stroke(255);
+    // rect(ax, ay, imageSize, imageSize);
 }
 
 function mousePressed() {

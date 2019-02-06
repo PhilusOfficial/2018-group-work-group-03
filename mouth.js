@@ -76,7 +76,7 @@ volume = mic.getLevel();
   textSize(20);
   noStroke();
   fill(255);
-  textFont('Courier');
+  textFont('Cutive Mono');
   textStyle(NORMAL);
   textAlign(CENTER);
   text('There is a specific mouth position to play the clarinet', width/2, height*0.8);
