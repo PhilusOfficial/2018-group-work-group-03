@@ -82,12 +82,10 @@ if (mouseX > width/3.8 && mouseX < width/2.7 && mouseY > height/7.4 && mouseY < 
     text(myData.clarinetParts[4].title,  width/2, height/4-20);
     text(myData.clarinetParts[4].text, width/2, height/4, 370, 470);
 }
-    else if (mouseX > 0.8*width && mouseX <  2*width && mouseY > 0.9*height && mouseY < 2*height) {
-
-    // text(myData.clarinetParts[5].title, 0.8*width, 0.9*height);
+    else if (mouseX > 0.7*width && mouseX <  0.9*width && mouseY > 0.8*height && mouseY < 0.9*height) {
+    text(myData.clarinetParts[5].title, 0.8*width, 0.9*height);
     changePage()
 }
-
 
 push();
 fill(col);
