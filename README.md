@@ -137,20 +137,27 @@ We expanded and explored the code that we were familiar with. We came across sev
 
 * **following the tune**
 
-## **Inspiration**
-
-* http://mchn.st/
+## **Inspirations**
 
 * https://www.patatap.com/
 
-* https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/
- 
+* https://musiclab.chromeexperiments.com/Experiments
+
+* http://mchn.st/ 
+
+
+## **Theory references**
+
+* https://www.theclarinet.net/
+
+* http://www.the-clarinets.net/
+
+* http://newt.phys.unsw.edu.au/jw/clarinetacoustics.html#overview
+
  
  ## **Libraries**
  
  * p5.sound
- 
- * p5.dom
  
  
  ## **Team members**
@@ -163,13 +170,14 @@ We expanded and explored the code that we were familiar with. We came across sev
  
  Mariapaola Gentile
  
+ 
  ## **Course reference and academic year**
  
  Creative Coding 2018/2019 (link)
  
-Politecnico di Milano - Scuola del Design
+ Politecnico di Milano - Scuola del Design
 
-Faculty: Michele Mauri, Tommaso Elli
+ Faculty: Michele Mauri, Tommaso Elli
 
 
 
