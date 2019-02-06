@@ -27,7 +27,7 @@ Even though we wanted to have as many interactions as possible, we knew that we 
 
    **keyboard interaction**
    
-   ![keyboardgif](https://user-images.githubusercontent.com/43534301/52316572-43d2f500-29bc-11e9-8b77-f62ef2f2c3f7.gif)
+   ![keyboardgif](https://user-images.githubusercontent.com/43534301/52318265-e773d380-29c3-11e9-84a5-e441d61839c6.gif)
    
 
    **microphone interaction**
@@ -49,6 +49,11 @@ We expanded and explored the code that we were familiar with. We came across sev
    
 
  **following the tune**
+ 
+ 
+ ## **Libraries**
+ 
+ p5.sound.js
  
  
  ## **Team members**
