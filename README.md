@@ -21,7 +21,7 @@ Even though we wanted to have as many interactions as possible, we knew that we 
 The idea behind this interaction is that user can learn the correct structure of the clarinet in a playful way. 
    
    ![mousegif](https://user-images.githubusercontent.com/43534301/52316501-e8086c00-29bb-11e9-9094-01e307680790.gif)
-   '''
+```
   function isInCircle(movingPart, staticPart, radius) {
   var xDistance = movingPart.x - staticPart.x;
   var yDistance = movingPart.y - staticPart.y;
@@ -34,7 +34,7 @@ if (bell.active && isInCircle(bell, bellbg, radius)) {
             bell.x = bellbg.x - 1;
             bell.y = bellbg.y;
         }
-'''
+```
 
 
 * **keyboard interaction**
@@ -42,7 +42,7 @@ if (bell.active && isInCircle(bell, bellbg, radius)) {
 By pressing the certain keys, one will hear the basic notes. However, except hearing the notes, you will be able to see which keys on clarinet need to be pressed in order to produce certain note.
    
    ![keyboardgif](https://user-images.githubusercontent.com/43534301/52318265-e773d380-29c3-11e9-84a5-e441d61839c6.gif)
-   '''
+```
    function draw() {
    a = a + 0.04;
   s = cos(a) * 2;
@@ -65,7 +65,7 @@ By pressing the certain keys, one will hear the basic notes. However, except hea
   mi = ellipse(width/2+15,3*height/5+150,15);
 
   }
-  '''
+```
    
 
 * **microphone interaction**
@@ -81,7 +81,7 @@ We expanded and explored the code that we were familiar with. We came across sev
 * **code for rotation**
    
    ![rotationgif](https://user-images.githubusercontent.com/43534301/52316672-dd9aa200-29bc-11e9-9e21-9ebac518d1a8.gif)
-   '''
+```
    function draw() {
    push();
 	translate(width/2, height/4.5);
@@ -112,7 +112,7 @@ We expanded and explored the code that we were familiar with. We came across sev
  rect(width/12, 3*height/4-18, w, 25);
    fill(0);
    testo = text('Well done!', width/12, 3*height/4);
-   '''
+```
    
 
 * **following the tune**
