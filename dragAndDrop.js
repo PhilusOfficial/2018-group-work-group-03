@@ -55,7 +55,7 @@ function setup() {
 
 function draw() {
 
-  background(0);
+  background('black');
 
   imageMode(CENTER);
   image(myImageBg1, mouthbg.x, mouthbg.y, myImageBg1.width/4, myImageBg1.height/4);
@@ -166,6 +166,7 @@ function mouseReleased() {
    if (mouth.active && isInCircle(mouth, mouthbg, radius)) {
               mouth.x = mouthbg.x;
               mouth.y = mouthbg.y - 7.5;
+              changePage()
       }
 
   return false;

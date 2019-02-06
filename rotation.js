@@ -81,3 +81,7 @@ push();
 
   function changePage() {
        window.location.href="index.html";}
+
+  function windowResized() {
+       resizeCanvas(windowWidth, windowHeight)
+       }

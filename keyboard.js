@@ -46,7 +46,7 @@ function setup() {
 var iterator = 0;
 
 function draw() {
-  background(0);
+  background('black');
   stroke(255);
 
   //clarinet front and back
