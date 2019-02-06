@@ -38,7 +38,10 @@ Even though we wanted to have as many interactions as possible, we knew that we 
 
 We expanded and explored the code that we were familiar with. We came across several problems with every part or page which primarily drove us crazy, but at the end it wasn’t anything that we could not fix.
 
- *JSON data*
+   **JSON data**
+   
+   ![jsongif](https://user-images.githubusercontent.com/43534301/52316618-8dbbdb00-29bc-11e9-816a-32721fee6c34.gif)
+   
 
  *code for rotation*
 
