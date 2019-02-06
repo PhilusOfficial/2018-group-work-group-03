@@ -41,7 +41,7 @@ if (bell.active && isInCircle(bell, bellbg, radius)) {
 
 By pressing the certain keys, one will hear the basic notes. However, except hearing the notes, you will be able to see which keys on clarinet need to be pressed in order to produce certain note.
    
-   
+![keygif](https://user-images.githubusercontent.com/43534301/52322399-5871b600-29d9-11e9-849c-fc1f9c49c6a5.gif)  
 ```
    function draw() {
    a = a + 0.04;
