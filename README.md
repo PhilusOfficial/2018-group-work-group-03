@@ -18,7 +18,7 @@ Even though we wanted to have as many interactions as possible, we knew that we 
 
 * **mouse interaction**  
    
-The idea behind this interaction is that user can learn the correct structure of the clarinet in a playful way. 
+The idea behind this interaction is that user can learn the correct structure of the clarinet in a playful way.  
    
 ![mousegif](https://user-images.githubusercontent.com/43534301/52322372-38da8d80-29d9-11e9-955c-6f49774cd8b0.gif)   
 ```
@@ -101,6 +101,8 @@ yOffset = mouseY-ay;
 We expanded and explored the code that we were familiar with. We came across several problems with every part or page which primarily drove us crazy, but at the end it wasn’t anything that we could not fix.
 
 * **code for rotation**
+
+There were 2 problems that needed to be solved. One was that clarinet was rotating at 360 degrees, but we only needed it to rotate at the angle of 90 degrees. After we solved that, we had difficulties to write the code which would make the actual program recognize an angle of 45 degrees.
    
 ![rotationgif](https://user-images.githubusercontent.com/43534301/52322471-97a00700-29d9-11e9-8b92-6e99b8ee9609.gif)   
 ```
@@ -138,6 +140,11 @@ We expanded and explored the code that we were familiar with. We came across sev
    
 
 * **following the tune**
+
+The last page on which you are playing the tune was also problematic. The hardest part was to code *when key is pressed* for notes that are repeating.
+
+![tunegif](https://user-images.githubusercontent.com/43534301/52322880-2c573480-29db-11e9-9b80-206c15ef89c5.gif)
+
 
 ## **Inspirations**
 
