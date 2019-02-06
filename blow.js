@@ -68,7 +68,7 @@ function draw() {
     overBox = false;
   }
 
-  if (volume >0.1) {
+  if (volume >0.02) {
     myfa2.play();
       }
 //volume microphone
