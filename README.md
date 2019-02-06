@@ -1,6 +1,6 @@
 ## **About**
 
-CLARINETTO is a musical project built in p5.js for the course Creative Coding at the Politecnico di Milano. The main idea is to show how the instrument functions and produces sounds.
+**CLARINETTO** is a musical project built in p5.js for the course Creative Coding at the Politecnico di Milano. The main idea is to show how the instrument functions and produces sounds.
 
 ## **Idea**
 
@@ -14,13 +14,13 @@ Clarinet itself is very complex so we wanted to present it as simple and as eleg
 
 Even though we wanted to have as many interactions as possible, we knew that we had to choose what suits our project. Lastly, we decided to make interactions with the mouse, keyboard and the microphone. 
 
-### *mouse interaction*  
+ *mouse interaction*  
 
-### *keyboard interaction*
+ *keyboard interaction*
 
-### *microphone interaction*
+ *microphone interaction*
 
-## **Code challenge**
+ **Code challenge**
 
 We expanded and explored the code that we were familiar with. We came across several problems with every part or page which primarily drove us crazy, but at the end it wasn’t anything that we could not fix.
 
