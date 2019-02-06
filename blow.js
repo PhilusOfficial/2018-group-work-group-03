@@ -102,7 +102,7 @@ function mouseReleased() {
 locked = false;
 }
 
-function changePage() {window.location.href="lastPage.html";}
+function changePage() {window.location.href="keyboard.html";}
 
 function windowResized() {
 resizeCanvas(windowWidth, windowHeight)
