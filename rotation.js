@@ -8,6 +8,7 @@ var img;
 var button;
 function preload(){
   myImageprofile = loadImage("./assets/profile.png");
+  mySong = loadSound("./assets/ThreePiecesforClarinet.mp3");
 }
 
 function setup() {
@@ -24,6 +25,16 @@ function setup() {
 
 function draw() {
 background('black');
+
+//music
+var volume = 0;
+if (mouseX > width/5) {
+ if (mySong.isPlaying() == false) {
+   mySong.play();
+ }
+} else {
+ mySong.stop();
+}
 
 push();
   //text

@@ -42,87 +42,97 @@ function draw() {
   background(0);
   stroke(255);
 
-  var wind = width/2;
-  var hig = 3*height/5;
-  //graphic shapes
-  if ((keyIsPressed == true) && (key == 'a')) {
-  //square
-  push();
-  translate(0.15*width, height/3);
-  rotate(s);
-  scale(s*3);
-  noFill();
-  stroke('#EBCA60');
-  strokeWeight(0.4);
-  rectMode(CENTER);
-  rect(0, 0, 50, 50);
-  rotate(s);
-  strokeWeight(0.3);
-  rect(0, 0, 20, 20);
-  rotate(s*0.5);
-  strokeWeight(0.1);
-  rect(0, 0, 10, 10);
-  pop();
-  }
-  else if ((keyIsPressed == true) && (key == 's')) {
-  //circles
-  ellipseMode(CENTER);
-  noFill();
-  stroke('#EBCA60');
-  strokeWeight(3);
-  ellipse(0.25*width, height/2, random()*320);
-  //circles2
-  strokeWeight(1.5);
-  ellipse(0.25*width, height/2, random()*100);
-} else if ((keyIsPressed == true) && (key == 'h')) {
-  push();
-  strokeWeight(random(7,9));
-  stroke('#EBCA60');
-  noFill();
-  translate(0.35*width, height/2);
-  rotate(frameCount*3);
-  ellipse(100,200, random()*30, random()*15);
-  rotate(frameCount*-2);
-  strokeWeight(random(1,3));
-  ellipse(50,100, random()*20, random()*8);
-  pop();
-  }
-else if ((keyIsPressed == true) && (key == 'l')) {
-  push();
-  translate(0.25*width, height/4);
-  rotate(s);
-  scale(s*2.5);
-  noFill();
-  stroke('#EBCA60');
-  strokeWeight(0.4);
-  triangle(20, 40, 30, 20, 40, 30);
-  rotate(s*(-3));
-  strokeWeight(0.3);
-  triangle(10, 20, 10, 15, 20, 25);
-  rotate(s*(-1));
-  strokeWeight(0.2);
-  triangle(5, 10, 10, 25, 20, 15);
-  pop();
-  }
+
+    //graphic shapes
+    if ((keyIsPressed == true) && (key == 'a')) {
+    //circles
+    ellipseMode(CENTER);
+    noFill();
+    stroke('#EBCA60');
+    strokeWeight(3);
+    ellipse(0.25*width, height/2, random()*320);
+    //circles2
+    strokeWeight(1.5);
+    ellipse(0.25*width, height/2, random()*100);
+    }
+    else if ((keyIsPressed == true) && (key == 's')) {
+    push();
+    strokeWeight(random(2,4));
+    stroke('#EBCA60');
+    noFill();
+    translate(0.35*width, height/3);
+    rotate(frameCount*5);
+    ellipse(40,75, random()*30, random()*15);
+    rotate(frameCount*-4);
+    strokeWeight(random(1,3));
+    ellipse(15,40, random()*20, random()*8);
+    pop()
+    }
   else if ((keyIsPressed == true) && (key == 'k')) {
-  }
-  else if ((keyIsPressed == true) && (key == 'j')) {
     push();
     stroke('#EBCA60');
-    strokeWeight(4);
+    strokeWeight(0.8);
     noFill();
-    ellipse(0.3*width, 3*height/5, random()*40)
-    translate(0.3*width, 3*height/5);
-    rotate(frameCount);
-    scale(s*0.6);
-    var x = sin(frameCount*0.008)*200;
-    line(0, 0, 0, x);
-    line(0, 0, -x, 0);
-    line(0, 0, 0, -x);
-    line(0, 0, x, 0);
+    translate(width*0.2, height*0.5);
+    scale(s);
+    rotate(frameCount/20);
+    polygon(0, 0, 60, 3);
+    rotate(frameCount/-20);
+    polygon(0, 0, 60, 3);
+    rotate(frameCount/50);
+    polygon(0, 0, 60, 3);
     pop();
-  }
-
+    }
+    if ((keyIsPressed == true) && (key == 'h')) {
+    //square
+    push();
+    translate(0.15*width, height/3);
+    rotate(s);
+    scale(s*3);
+    noFill();
+    stroke('#EBCA60');
+    strokeWeight(0.4);
+    rectMode(CENTER);
+    rect(0, 0, 50, 50);
+    rotate(s);
+    strokeWeight(0.3);
+    rect(0, 0, 20, 20);
+    rotate(s*0.5);
+    strokeWeight(0.1);
+    rect(0, 0, 10, 10);
+    pop();
+    }
+    else if ((keyIsPressed == true) && (key == 'j')) {
+      push();
+      stroke('#EBCA60');
+      strokeWeight(2);
+      noFill();
+      ellipse(0.3*width, 3*height/5, random()*70)
+      translate(0.3*width, 3*height/5);
+      strokeWeight(3);
+      rotate(frameCount);
+      scale(s*0.5);
+      var x = sin(frameCount/150)*100;
+      line(0, 0, 0, x);
+      line(0, 0, -x, 0);
+      line(0, 0, 0, -x);
+      line(0, 0, x, 0);
+      pop();
+    }
+      else if ((keyIsPressed == true) && (key == 'l')) {
+        push();
+        stroke('#EBCA60');
+        strokeWeight(0.8);
+        noFill();
+        translate(width*0.3, height*0.7);
+        scale(s*0.6);
+        rotate(frameCount/50);
+        polygon(0, 0, 80, 10);
+        scale(s*0.5);
+        rotate(frameCount/55);
+        polygon(0, 0, 60, 10);
+        pop();
+      }
 
   //text
   textSize(20);
@@ -394,6 +404,16 @@ else if ((keyIsPressed == true) && (key == 'l')) {
     }
       }
 
+      function polygon(x, y, radius, npoints) {
+        var angle = TWO_PI / npoints;
+        beginShape();
+        for (var a = 0; a < TWO_PI; a += angle) {
+          var sx = x + cos(a) * radius;
+          var sy = y + sin(a) * radius;
+          vertex(sx, sy);
+        }
+        endShape(CLOSE);
+      }
 
   // resize
   function windowResized() {
