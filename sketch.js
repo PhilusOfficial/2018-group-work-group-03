@@ -88,34 +88,34 @@ if (mouseX > width/5) {
   line(width/2-270,pos,width/2-240,pos);
   };
   for(var pos = 3*height/5+100; pos <= 3*height/5+130; pos+=20){
-  line(width/2-210,pos,width/2-180,pos);
+  line(width/2+60,pos,width/2+30,pos);
   };
   for(var pos = 3*height/5+100; pos <= 3*height/5+110; pos+=20){
   line(width/2-150,pos,width/2-120,pos);
   };
   for(var pos = 3*height/5+100; pos <= 3*height/5+110; pos+=20){
-  line(width/2-90,pos,width/2-60,pos);
+  line(width/2+390,pos,width/2+420,pos);
   };
 
   //notes
   noStroke();
   fill(255);
   ellipseMode(CENTER);
-  mi = ellipse(width/2-375,3*height/5+150,15);
-  fa = ellipse(width/2-315,3*height/5+140,15);
-  sol = ellipse(width/2-255,3*height/5+130,15);
-  la = ellipse(width/2-195,3*height/5+120,15);
-  si = ellipse(width/2-135,3*height/5+110,15);
-  donota = ellipse(width/2-75,3*height/5+100,15);
+  mi = ellipse(width/2-375,3*height/5+150,15); //-375
+  fa = ellipse(width/2-315,3*height/5+140,15); //-315
+  sol = ellipse(width/2-255,3*height/5+130,15); //-255
+  la = ellipse(width/2+45,3*height/5+120,15); //-195
+  si = ellipse(width/2-135,3*height/5+110,15); //-135
+  donota = ellipse(width/2+405,3*height/5+100,15); //-75
   re = ellipse(width/2-15,3*height/5+90,15);
-  ellipse(width/2+45,3*height/5+80,15);
-  ellipse(width/2+105,3*height/5+70,15);
-  ellipse(width/2+165,3*height/5+60,15);
-  ellipse(width/2+225,3*height/5+50,15);
+  ellipse(width/2-195,3*height/5+80,15);
+  ellipse(width/2+225,3*height/5+70,15);
+  ellipse(width/2+465,3*height/5+60,15);
+  ellipse(width/2-75,3*height/5+50,15);
   ellipse(width/2+285,3*height/5+40,15);
   ellipse(width/2+345,3*height/5+30,15);
-  ellipse(width/2+405,3*height/5+20,15);
-  ellipse(width/2+465,3*height/5+10,15);
+  ellipse(width/2+105,3*height/5+20,15);
+  ellipse(width/2+165,3*height/5+10,15);
 
 //changePage
   //text
