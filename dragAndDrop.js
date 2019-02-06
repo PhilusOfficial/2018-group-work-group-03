@@ -9,7 +9,6 @@ var myImageBg2;
 var myImageBg3;
 var myImageBg4;
 var myImageBg5;
-
 var myImageArrow;
 var myImageArrowBg;
 
