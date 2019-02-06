@@ -71,6 +71,8 @@ By pressing the certain keys, one will hear the basic notes. However, except hea
 * **microphone interaction**
 
 With this interaction we wanted to show how the sound is produced. After learning about the correct angle position of the clarinet, one will see the correct mouth position and the air flow.
+
+![mouthpic](https://user-images.githubusercontent.com/43534301/52322439-7b03cf00-29d9-11e9-90ac-a7f280a088d7.png)
 ```
  if (mouseX > ax-imageSize && mouseX < ax+imageSize &&
       mouseY > ay-imageSize && mouseY < ay+imageSize) {
