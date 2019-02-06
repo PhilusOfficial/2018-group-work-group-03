@@ -1,3 +1,6 @@
+![clarinet_gif](https://user-images.githubusercontent.com/43534301/52316396-73353200-29bb-11e9-9aff-a9d61f41f6f3.gif)
+
+
 ## **About**
 
 **CLARINETTO** is a musical project built in p5.js for the course Creative Coding at the Politecnico di Milano. The main idea is to show how the instrument functions and produces sounds.
