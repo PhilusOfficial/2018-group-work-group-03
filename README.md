@@ -20,7 +20,7 @@ Even though we wanted to have as many interactions as possible, we knew that we 
    
 The idea behind this interaction is that user can learn the correct structure of the clarinet in a playful way. 
    
-   
+![mousegif](https://user-images.githubusercontent.com/43534301/52322372-38da8d80-29d9-11e9-955c-6f49774cd8b0.gif)   
 ```
   function isInCircle(movingPart, staticPart, radius) {
   var xDistance = movingPart.x - staticPart.x;
