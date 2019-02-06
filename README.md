@@ -26,8 +26,13 @@ Even though we wanted to have as many interactions as possible, we knew that we 
    
 
    **keyboard interaction**
+   
+   ![keyboardgif](https://user-images.githubusercontent.com/43534301/52316572-43d2f500-29bc-11e9-8b77-f62ef2f2c3f7.gif)
+   
 
- *microphone interaction*
+   **microphone interaction**
+   
+   
 
  ## **Code challenge**
 
